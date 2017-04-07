@@ -1,2 +1,2 @@
 # ios_cocos
-ios原生应用嵌入cocos2dx游戏
+ios原生应用嵌入cocos2dx游戏整包内部实现只是简单的hello world界面。实现ios跳转cocos2dx和cocos2dx跳转ios。
