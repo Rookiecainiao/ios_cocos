@@ -25,8 +25,18 @@ bool CocosScene::init()
     if (!Layer::init()) {
         return false;
     }
+    
     auto visiblesize = Director::getInstance()->getVisibleSize();
     cout<<visiblesize.width<<visiblesize.height<<endl;
+    
+    auto layer = Layer::create();
+    
+    layer->setPosition(Vec2(visiblesize.width/2, visiblesize.height/2));
+    layer->setAnchorPoint(Vec2(0.5, 0.5));
+    layer->setContentSize(Size(visiblesize.width, visiblesize.height));
+    addChild(layer);
+    
+    
     auto sprite = Sprite::create("HelloWorld.png");
     sprite->setPosition(Vec2(visiblesize.width/2, visiblesize.height/2));
     sprite->setScale(3);
@@ -43,8 +53,8 @@ bool CocosScene::init()
                                            "CloseSelected.png",
                                            CC_CALLBACK_1(CocosScene::menuCloseCallback, this));
     
-    closeItem->setPosition(Vec2(visiblesize.width/2+200, visiblesize.height/2-300));
-    
+    closeItem->setPosition(Vec2(visiblesize.width/2+200, visiblesize.height/2-400));
+    closeItem->setScale(2.0);
     // create menu, it's an autorelease object
     auto menu = Menu::create(closeItem, NULL);
     menu->setPosition(Vec2::ZERO);

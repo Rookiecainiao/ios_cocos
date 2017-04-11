@@ -36,12 +36,12 @@ USING_NS_CC;
     // Enable or disable multiple touches
     [eaglView setMultipleTouchEnabled:NO];
     //
-    self.view = eaglView;
+    [self.view addSubview:eaglView];
     
     [[UIApplication sharedApplication] setStatusBarHidden:true];
     
     // IMPORTANT: Setting the GLView should be done after creating the RootViewController
-    cocos2d::GLView *glview = cocos2d::GLViewImpl::createWithEAGLView((__bridge void *)self.view);
+    cocos2d::GLView *glview = cocos2d::GLViewImpl::createWithEAGLView((__bridge void *)eaglView);
     
     cocos2d::Director::getInstance()->setOpenGLView(glview);
     auto scene = CocosScene::createScene();
