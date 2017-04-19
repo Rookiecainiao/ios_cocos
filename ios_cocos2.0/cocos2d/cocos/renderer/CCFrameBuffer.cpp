@@ -382,7 +382,8 @@ bool FrameBuffer::init(uint8_t fid, unsigned int width, unsigned int height)
 }
 
 FrameBuffer::FrameBuffer()
-: _clearColor(Color4F(0, 0, 0, 1))
+//: _clearColor(Color4F(0, 0, 0, 1))
+: _clearColor(Color4F(0, 0, 0, 0))
 , _clearDepth(1.0)
 , _clearStencil(0)
 , _fbo(0)

@@ -27,26 +27,14 @@ bool CocosScene::init()
     }
     
     auto visiblesize = Director::getInstance()->getVisibleSize();
-    cout<<visiblesize.width<<visiblesize.height<<endl;
+    auto origin = Director::getInstance()->getVisibleOrigin();
     
-    auto layer = Layer::create();
+    cout<<visiblesize.width<<visiblesize.height<<origin.x<<origin.y<<endl;
     
-    layer->setPosition(Vec2(visiblesize.width/2, visiblesize.height/2));
-    layer->setAnchorPoint(Vec2(0.5, 0.5));
-    layer->setContentSize(Size(visiblesize.width, visiblesize.height));
-    addChild(layer);
-    
-    
-    auto sprite = Sprite::create("HelloWorld.png");
-    sprite->setPosition(Vec2(visiblesize.width/2, visiblesize.height/2));
-    sprite->setScale(3);
-    addChild(sprite);
-    auto label = Label::createWithTTF("hello world", "Marker Felt.ttf", 30);
-    label->setPosition(Vec2(visiblesize.width/2, visiblesize.height/2-200));
-    label->setAnchorPoint(Vec2(0.5, 0.5));
-    label->setColor(Color3B::GREEN);
-    label->setScale(3);
-    addChild(label);
+    auto sprbg = Sprite::create("donghuabg.png");
+    sprbg->setPosition(Vec2(origin.x+visiblesize.width/2, visiblesize.height));
+    sprbg->setAnchorPoint(Vec2(0.5,1));
+    addChild(sprbg);
     
     auto closeItem = MenuItemImage::create(
                                            "CloseNormal.png",

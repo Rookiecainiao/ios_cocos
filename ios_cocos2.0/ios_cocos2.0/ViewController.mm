@@ -35,18 +35,7 @@
     
    
 }
-- (void)reStartView{
-    NSLog(@"listener");
-    if (Bridge::getBridge()->getstate()) {
-        NSLog(@"restartview");
-        [self.view removeFromSuperview];
-        [self viewDidLoad];
-    }
-    
-    Bridge::getBridge()->setstate(false);
-   
-    
-}
+
 - (void)gotoFirstAction{
     NSLog(@"tiaotiaotiao");
 //    _dview = [[UIView alloc]init];

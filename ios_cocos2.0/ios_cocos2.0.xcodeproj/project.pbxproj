@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60AC31E1EA70D0E00C76A59 /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = D60AC31D1EA70D0E00C76A59 /* 123.png */; };
 		D6200ED21E8A7EB0006DDF57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6200ED11E8A7EB0006DDF57 /* main.m */; };
 		D6200ED51E8A7EB0006DDF57 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6200ED41E8A7EB0006DDF57 /* AppDelegate.mm */; };
 		D6200ED81E8A7EB0006DDF57 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D6200ED71E8A7EB0006DDF57 /* ViewController.mm */; };
@@ -36,6 +37,7 @@
 		D6200F3B1E8A9541006DDF57 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D6200F351E8A9541006DDF57 /* .gitkeep */; };
 		D6200F3D1E8A9670006DDF57 /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6200F3C1E8A9670006DDF57 /* libc++abi.tbd */; };
 		D6200F411E8A9DC0006DDF57 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D6200F401E8A9DC0006DDF57 /* libstdc++.tbd */; };
+		D66C9A171E9C890E009977C2 /* donghuabg.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C9A161E9C890E009977C2 /* donghuabg.png */; };
 		D66FD0121E8CB0A400501846 /* Bridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D66FD0101E8CB0A400501846 /* Bridge.cpp */; };
 		D66FD0151E8CB81500501846 /* scendView.mm in Sources */ = {isa = PBXBuildFile; fileRef = D66FD0141E8CB81500501846 /* scendView.mm */; };
 		D6B1CB8C1E8B4AC40056EEC7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1CB8B1E8B4AC40056EEC7 /* CoreMotion.framework */; };
@@ -89,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D60AC31D1EA70D0E00C76A59 /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		D6200ECD1E8A7EB0006DDF57 /* ios_cocos2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_cocos2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6200ED11E8A7EB0006DDF57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6200ED31E8A7EB0006DDF57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 		D6200F351E8A9541006DDF57 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		D6200F3C1E8A9670006DDF57 /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		D6200F401E8A9DC0006DDF57 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D66C9A161E9C890E009977C2 /* donghuabg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donghuabg.png; sourceTree = "<group>"; };
 		D66FD0101E8CB0A400501846 /* Bridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bridge.cpp; sourceTree = "<group>"; };
 		D66FD0111E8CB0A400501846 /* Bridge.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bridge.hpp; sourceTree = "<group>"; };
 		D66FD0131E8CB81500501846 /* scendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scendView.h; sourceTree = "<group>"; };
@@ -206,6 +210,8 @@
 		D6200ECF1E8A7EB0006DDF57 /* ios_cocos2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				D60AC31D1EA70D0E00C76A59 /* 123.png */,
+				D66C9A161E9C890E009977C2 /* donghuabg.png */,
 				D6200F2E1E8A9541006DDF57 /* CloseNormal.png */,
 				D6200F2F1E8A9541006DDF57 /* CloseSelected.png */,
 				D6200F331E8A9541006DDF57 /* HelloWorld.png */,
@@ -451,6 +457,8 @@
 				D6200F371E8A9541006DDF57 /* CloseSelected.png in Resources */,
 				D6200EDD1E8A7EB1006DDF57 /* Assets.xcassets in Resources */,
 				D6200F3A1E8A9541006DDF57 /* HelloWorld.png in Resources */,
+				D60AC31E1EA70D0E00C76A59 /* 123.png in Resources */,
+				D66C9A171E9C890E009977C2 /* donghuabg.png in Resources */,
 				D6200F381E8A9541006DDF57 /* arial.ttf in Resources */,
 				D6200EDB1E8A7EB0006DDF57 /* Main.storyboard in Resources */,
 			);

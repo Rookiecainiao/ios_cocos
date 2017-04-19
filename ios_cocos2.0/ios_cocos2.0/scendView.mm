@@ -25,7 +25,7 @@ USING_NS_CC;
     app->initGLContextAttrs();
     cocos2d::GLViewImpl::convertAttrs();
     
-    CCEAGLView *eaglView = [CCEAGLView viewWithFrame: [UIScreen mainScreen].bounds
+    CCEAGLView *eaglView = [CCEAGLView viewWithFrame: CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height-200)
                                          pixelFormat: (__bridge NSString *)cocos2d::GLViewImpl::_pixelFormat
                                          depthFormat: cocos2d::GLViewImpl::_depthFormat
                                   preserveBackbuffer: NO
@@ -35,7 +35,9 @@ USING_NS_CC;
     
     // Enable or disable multiple touches
     [eaglView setMultipleTouchEnabled:NO];
-    //
+    eaglView.backgroundColor = [UIColor clearColor];
+    eaglView.opaque = NO;
+    
     [self.view addSubview:eaglView];
     
     [[UIApplication sharedApplication] setStatusBarHidden:true];
@@ -53,12 +55,18 @@ USING_NS_CC;
     NSRunLoop* runloop = [NSRunLoop currentRunLoop];
     [runloop addTimer:_timer forMode:NSDefaultRunLoopMode];
     
+    self.view.backgroundColor = [UIColor yellowColor];
+    UIImageView *background = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"123.png"]];
+    background.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+    [self.view addSubview:background];
+    [self.view sendSubviewToBack:background];
+    
 }
 
 - (void)reStartView{
-    NSLog(@"listener");
+//    NSLog(@"listener");
     if (Bridge::getBridge()->getstate()) {
-        NSLog(@"restartview");
+//        NSLog(@"restartview");
         [_timer invalidate];
 //        Director::getInstance()->end();
         [self dismissViewControllerAnimated: YES completion: nil ];
